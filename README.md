@@ -9,10 +9,10 @@
 
 ---
 
-![image alt](https://github.com/Underwaterbet023/FillPit-Website/blob/main/Screenshot%202025-09-19%20091301.png?raw=true)
+![image alt](https://github.com/Underwaterbet023/FillPit-Website-main/blob/main/Screenshot%202025-09-19%20091301.png?raw=true)
 
 ---
-![image alt](https://github.com/Underwaterbet023/FillPit-Website/blob/main/Screenshot%202025-09-19%20091357.png?raw=true)
+![image alt](https://github.com/Underwaterbet023/FillPit-Website-main/blob/main/Screenshot%202025-09-19%20091357.png?raw=true)
 
 ## 🛠 Features
 
