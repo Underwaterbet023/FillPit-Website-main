@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FillPit Homepage</title>
+    <link rel="shortcut icon" href="images/Scary10.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/Scary10.png" alt="Fill Pit Logo" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Us">About Us</a></li>
+            <li><a href="#about">Graph</a></li>
+            <li><a href="#service">Support Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+        <div class="sec-center">
+          <div class="for-dropdown" onclick="toggleDropdown()">Login <i class="uil uil-arrow-down"></i></div>
+          <div class="section-dropdown">
+            <a href="user-login.html"><b>User</b></a>
+            <div class="for-sub-dropdown" onclick="toggleSubDropdown()"><a href="admin.html">Admin </a><i class="uil uil-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+
+  function toggleDropdown() {
+    const dropdown = document.querySelector('.section-dropdown');
+    if (dropdown) {
+      dropdown.classList.toggle('show');
+    } else {
+      console.error('Dropdown element not found');
+    }
+  }
+
+  function toggleSubDropdown() {
+    const subDropdown = document.querySelector('.for-sub-dropdown-content');
+    if (subDropdown) {
+      subDropdown.classList.toggle('show');
+    } else {
+      console.error('Sub-dropdown element not found');
+    }
+  }
+
+  document.querySelector('.for-dropdown').addEventListener('click', toggleDropdown);
+  document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+});
+
+</script>
+    <section id="home" class="home">
+      <video class="video-slide" src="Video/home1.mp4" autoplay muted loop></video>
+      <video class="video-slide2" src="Video/home2.mp4" autoplay muted loop></video>
+      <video class="video-slide3" src="Video/home3.mp4" autoplay muted loop></video>
+      <video class="video-slide4" src="Video/home4.mp4" autoplay muted loop></video>
+      <video class="video-slide4" src="Video/home5.mp4" autoplay muted loop></video>
+          
+      <div class="content" >
+          <h1 class="text">FillPit...</h1>
+         
+          <div class="media-icons">
+              <a href="https://www.instagram.com/KumarSanskar55"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100095307382889"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Underwaterbet023"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/@SanskarKumar-i1s"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="slider-navigation">
+              <div class="nav-btn active"></div>
+              <div class="nav-btn"></div>
+              <div class="nav-btn"></div>
+              <div class="nav-btn"></div>
+              <div class="nav-btn"></div>
+          </div>
+      </div>
+  </section>
+  <section class="abou">
+  <div class="ab">
+    <div class="image-section">
+        <div class="image-stack">
+            <img src="images/ab.png" class="image">
+        </div>
+    </div>
+    <div class="content-section" id="Us">
+        <h1>About Us</h1>
+        <span>In our project focused on fixing potholes, we are developing a user-friendly website where citizens can actively participate in reporting potholes across India. Users can upload images of the potholes along with the live location, making it easier for the government to track and address these issues. The data collected is categorized state-wise, enabling the authorities to identify problematic areas and prioritize road repairs. This initiative aims to improve road safety, reduce vehicle damage, and ensure smoother commuting experiences for all citizens by streamlining the process of reporting and fixing potholes in a timely manner.</span>
+      </section>
+    </div>
+</div>  
+  <section id="about" class="about">
+  <h1 class="heading" >Graph</h1>
+    <h3 class="title">Learn and Explore our Graph Overview</h3>
+   </section> 
+   <header class="chart">
+    <div class="chart-container">
+      <div class="chart-section">
+        <h2>Trends in number of Accidents, Fatalities and Persons Injured: 2018 to 2022</h2>
+        <canvas id="barChart"></canvas>
+      </div>
+      
+      <div class="chart-section">
+        <h2>Road Accidents, Fatalities and Injuries by Type of Collusion (in percent)</h2> 
+        <div class="pie-chart-wrapper">
+          <div class="pie-chart-container">
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="pie-chart-legend">
+            <section class="data">
+              <li style="color:blue; ">Hit And run</li>
+                 <li style="color:red; ">With Parked Vehicles</li>
+                 <li style="color:gray; ">Hit From Back</li>
+                 <li style="color:yellow; ">Hit From Side</li>
+                 <li style="color:purple; ">Potholes</li>
+                 <li style="color:orange; ">Vehicle Overturn</li>
+                 <li style="color:#34495e;">Head On Collision</li>
+                 <li style="color:rgb(255, 103, 1); ;">Others</li>
+
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="charts.js"></script>
+      </div>
+  </section>
+  <section id="service" class="Service"></section>
+
+  <h1 class="heading2">Support Us</h1>
+  <section 
+  class="pothole-section">
+      <div class="pothole-container">
+       
+          <div class="report-pothole">
+              <h2>Our Work</h2>
+              <p>Let's Make Our Roads Safe In Three Simple Steps</p>
+              <div class="steps">
+                  <div class="step">
+                      <img src="images/1.png" >
+                      
+                  </div>
+                  <div class="step">
+                      <img src="images/2.png" >
+                      
+                  </div>
+                  <div class="step">
+                      <img src="images/3.png" >
+                      
+                  </div>
+              </div>
+          </div>
+
+          <div class="celebrate">
+              <h2>Support Us</h2>
+              <p><span>FOR EVERY POTHOLE CLOSED.</span></p>
+              <p> Contribute and be part of the movement!</p>
+              <a href="support.html"><button class="button">
+                  Donate
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path
+                      clip-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </a> 
+                
+          </div>
+      </div>
+  </section>
+  <div class="container swiper" id="gallery">
+    <div class="card-wrapper">
+     
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="gallery-detail.html?id=1" class="card-link">
+            <img src="images/gallery.png" alt="Card Image" class="card-image">
+            <h2 class="card-title">Assam</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="gallery-detail.html?id=2" class="card-link">
+            <img src="images/collection-1.jpeg.jpg" alt="Card Image" class="card-image">
+            <h2 class="card-title">Rajasthan</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="gallery-detail.html?id=3" class="card-link">
+            <img src="images/collection-2.jpeg.jpg" alt="Card Image" class="card-image">
+            <h2 class="card-title">Delhi</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="gallery-detail.html?id=4" class="card-link">
+            <img src="images/banner-2.png" alt="Card Image" class="card-image">
+            <h2 class="card-title">Uttarakhand</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="gallery-detail.html?id=5" class="card-link">
+            <img src="images/collection-3.jpeg.jpg" alt="Card Image" class="card-image">
+            <h2 class="card-title">Uttar Pradesh</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+      </ul>
+
+      
+      <div class="swiper-pagination"></div>
+
+     
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <section class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-box">
+           
+            <a href="index.html"><img src="images/Scary10.png" class="logo1" alt=" Logo1" /></a>
+            <p>Fill Pit is a social initiative aimed at spreading awareness about road safety and saving lives.</p>
+            
+        </div>
+
+        
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100095307382889"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/KumarSanskar55"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com/@SanskarKumar-i1s"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://github.com/Underwaterbet023"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+
+      
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Us">About Us</a></li>
+                <li><a href="#about">Graph</a></li>
+                <li><a href="#service">Support Us </a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fill Pit. All rights reserved.</p>
+    </div>
+</section>
+    <script href="index.js"></script>
+    <script>
+      function toggleDropdown() {
+        document.getElementById("loginDropdown").classList.toggle("show");
+      }
+
+      
+      window.onclick = function (event) {
+        if (!event.target.matches(".login-btn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <script>
+       const videoSlides = document.querySelectorAll(".video-slide, .video-slide2, .video-slide3, .video-slide4, .video-slide5");
+        const navBtns = document.querySelectorAll(".nav-btn");
+        let currentIndex = 0; 
+
+        const changeVideo = (index) => {
+            videoSlides.forEach((video, i) => {
+                video.style.display = "none"; 
+                navBtns[i].classList.remove("active"); 
+            });
+            videoSlides[index].style.display = "block";
+            navBtns[index].classList.add("active"); 
+        };
+
+        const autoPlayVideo = () => {
+            currentIndex = (currentIndex + 1) % videoSlides.length;
+            changeVideo(currentIndex);
+        };
+
+        navBtns.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+                currentIndex = index; 
+                changeVideo(currentIndex); 
+            });
+        });
+        changeVideo(0); 
+        setInterval(autoPlayVideo, 5000); 
+    </script>
+    <script>
+      const ctxBar = document.getElementById('barChart').getContext('2d');
+const barChart = new Chart(ctxBar, {
+  type: 'bar',
+  data: {
+    labels: ['2018', '2019', '2020', '2021', '2022'],
+    datasets: [
+      {
+        label: 'Accidents',
+        data: [450000, 420000, 390000, 410000, 430000],
+        backgroundColor: '#333333',
+      },
+      {
+        label: 'Fatalities',
+        data: [50000, 45000, 40000, 42000, 43000],
+        backgroundColor: '#e74c3c',
+      },
+      {
+        label: 'Persons Injured',
+        data: [370000, 360000, 350000, 355000, 360000],
+        backgroundColor: '#3498db',
+      }
+    ]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'In Number'
+        }
+      }
+    }
+  }
+});
+
+const ctxPie = document.getElementById('pieChart').getContext('2d');
+const pieChart = new Chart(ctxPie, {
+  type: 'pie',
+  data: {
+    labels: ['Hit and Run', 'With Parked Vehicle', 'Hit from Back', 'Hit from Side', 'Run off Road', 'Potholes', 'Vehicle Overturn', 'Head on Collision', 'Others'],
+    datasets: [{
+      data: [15, 20, 10, 5, 12, 8, 6, 18, 6],
+      backgroundColor: ['#3498db', '#e74c3c', '#95a5a6', '#f1c40f', '#2ecc71', '#8e44ad', '#e67e22', '#34495e', '#d35400']
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+const pieLegendContainer = document.getElementById('pieLegend');
+pieChart.data.labels.forEach((label, index) => {
+  const legendItem = document.createElement('li');
+  legendItem.textContent = label;
+  legendItem.style.color = pieChart.data.datasets[0].backgroundColor[index];
+  pieLegendContainer.appendChild(legendItem);
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+     new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3}}
+});
+      </script>
+
+  </body>
+</html>

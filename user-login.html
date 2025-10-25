@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login - FillPit</title>
+  <link rel="shortcut icon" href="images/Scary10.png" type="image/x-icon">
+  <link rel="stylesheet" href="login.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form">
+      <h2>Sign In</h2>
+      <form>
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <div class="input-field">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="login-email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <div class="input-field">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="login-password" placeholder="Your password" required>
+            <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+          </div>
+        </div>
+        <button type="submit" id="signin-btn">Sign In</button>
+      </form>
+      <p class="switch-form">New user? <a href="#" id="show-signup">Sign Up</a></p>
+      <a href="index.html" class="home-link">Back to Home</a>
+    </div>
+
+    <div class="form-container" id="signup-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="input-group">
+          <label for="signup-username">Username</label>
+          <div class="input-field">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" id="signup-username" placeholder="Choose a username" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="signup-email">Email</label>
+          <div class="input-field">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="signup-email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="signup-password">Password</label>
+          <div class="input-field">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="signup-password" placeholder="Create a password" required>
+            <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+          </div>
+        </div>
+        <button type="submit" id="signup-btn">Sign Up</button>
+      </form>
+      <p class="switch-form">Already have an account? <a href="#" id="show-login">Sign In</a></p>
+      <a href="index.html" class="home-link">Back to Home</a>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

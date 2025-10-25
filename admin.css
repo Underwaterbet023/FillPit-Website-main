@@ -1,0 +1,190 @@
+* {
+    font-family: "Poppins";
+  }
+  
+  body {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0e6ff; /* Light purple background */
+    height: 100vh;
+    background-image: linear-gradient(135deg, #f0e6ff 0%, #ffffff 100%);
+  }
+  
+  .screen-1 {
+    background: #ffffff; /* White background */
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(138, 106, 207, 0.2); /* Purple shadow */
+    gap: 2em;
+    max-width: 400px;
+    width: 100%;
+  }
+  .screen-1 .logo {
+    margin-top: -3em;
+  }
+  .screen-1 .header {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .screen-1 .header h1 {
+    color: #8a6acf; /* Light purple */
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  
+  .screen-1 .email {
+    background: white;
+    box-shadow: 0 5px 15px rgba(138, 106, 207, 0.1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 12px;
+    color: #6a5a8c;
+    border: 1px solid #f0e6ff;
+    transition: all 0.3s ease;
+  }
+  
+  .screen-1 .email:focus-within {
+    border-color: #8a6acf;
+    box-shadow: 0 5px 15px rgba(138, 106, 207, 0.2);
+  }
+  
+  .screen-1 .email input {
+    outline: none;
+    border: none;
+    color: #6a5a8c;
+    font-size: 1em;
+  }
+  
+  .screen-1 .email input::-moz-placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .email input:-ms-input-placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .email input::placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .email ion-icon {
+    color: #8a6acf;
+    margin-bottom: -0.2em;
+  }
+  
+  .screen-1 .password {
+    background: white;
+    box-shadow: 0 5px 15px rgba(138, 106, 207, 0.1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 12px;
+    color: #6a5a8c;
+    border: 1px solid #f0e6ff;
+    transition: all 0.3s ease;
+  }
+  
+  .screen-1 .password:focus-within {
+    border-color: #8a6acf;
+    box-shadow: 0 5px 15px rgba(138, 106, 207, 0.2);
+  }
+  
+  .screen-1 .password input {
+    outline: none;
+    border: none;
+    color: #6a5a8c;
+    font-size: 1em;
+  }
+  
+  .screen-1 .password input::-moz-placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .password input:-ms-input-placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .password input::placeholder {
+    color: #b3a6cc;
+    font-size: 0.9em;
+  }
+  
+  .screen-1 .password ion-icon {
+    color: #8a6acf;
+    margin-bottom: -0.2em;
+  }
+  
+  .screen-1 .password .show-hide {
+    margin-right: -5em;
+    cursor: pointer;
+    color: #8a6acf;
+  }
+  
+  .screen-1 .login {
+    padding: 1em;
+    background: #8a6acf; /* Light purple */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(138, 106, 207, 0.3);
+  }
+  
+  .screen-1 .login:hover {
+    background: #7559b8; /* Darker purple on hover */
+    transform: translateY(-2px);
+  }
+  
+  .screen-1 .footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.85em;
+    color: #8a6acf;
+    margin-top: 1em;
+  }
+  
+  .screen-1 .footer a {
+    color: #8a6acf;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .screen-1 .footer a:hover {
+    color: #7559b8;
+    text-decoration: underline;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+  .header h1{
+    margin-bottom: 40px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signup a{
+    text-decoration: none;
+  }

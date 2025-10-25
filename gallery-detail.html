@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Detail - FillPit</title>
+    <link rel="shortcut icon" href="images/Scary10.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f6fb;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-right: 20px;
+        }
+        
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .nav-links li a:hover {
+            color: #2b3f98;
+        }
+        
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .gallery-detail {
+            padding-top: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+        
+        .detail-container {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .detail-content {
+            padding: 30px;
+        }
+        
+        .detail-content h1 {
+            color: #2b3f98;
+            margin-bottom: 15px;
+        }
+        
+        .detail-content p {
+            margin-bottom: 20px;
+        }
+        
+        .detail-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .location, .date {
+            display: flex;
+            align-items: center;
+        }
+        
+        .location i, .date i {
+            margin-right: 10px;
+            color: #2b3f98;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #2b3f98;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #19205a;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-wrap: wrap;
+            }
+            
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            .nav-links.show {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .gallery-detail {
+                padding: 80px 20px 40px;
+            }
+            
+            .image-container {
+                height: 250px;
+            }
+            
+            .detail-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Scary10.png" alt="Fill Pit Logo" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Us">About Us</a></li>
+                    <li><a href="index.html#about">Graph</a></li>
+                    <li><a href="index.html#service">Support Us</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                </ul>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-detail">
+        <div class="detail-container">
+            <!-- <div class="image-container">
+                <img id="gallery-image" src="images/gallery.png" alt="Road Repair" style="max-width: 100%; height: auto; display:block;">
+            </div> -->
+            <div class="detail-content">
+                <h1>Road Repair Project</h1>
+                <p>This project was undertaken by the FillPit team to address a severe pothole issue that had been causing traffic disruptions and vehicle damage for several months. The road had deteriorated due to heavy rainfall and inadequate drainage systems.</p>
+                
+                <p>Our team conducted a thorough assessment of the damage and developed a comprehensive repair plan. We began by removing the damaged asphalt, properly preparing the base, and then applying a high-quality asphalt mix designed to withstand local weather conditions and traffic loads.</p>
+                
+                <p>The repair work was completed in just two days, minimizing inconvenience to local residents and commuters. We also improved the drainage system to prevent similar issues in the future.</p>
+                
+                <div class="detail-meta">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rajiv Chowk, Delhi</span>
+                    </div>
+                    <div class="date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed on: March 15, 2025</span>
+                    </div>
+                </div>
+                
+                <a href="index.html#gallery" class="back-button">Back to Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+        
+        // Get image ID from URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const imageId = urlParams.get('id');
+            
+            // Default content is already in the HTML
+            // In a real application, you would fetch the specific image and details based on the ID
+            if (imageId) {
+                const galleryImage = document.getElementById('gallery-image');
+                if (galleryImage) {
+                    galleryImage.src = `images/gallery${imageId}.jpg`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
