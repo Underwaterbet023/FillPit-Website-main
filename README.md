@@ -5,7 +5,7 @@
 
 ## 🌐 Live Demo
 
-> [ 🚧 Live Demo of my website](https://underwaterbet023.github.io/FillPit-Website/)  
+> [ 🚧 Live Demo of my website](https://underwaterbet023.github.io/FillPit-Website-main/)  
 
 ---
 
@@ -61,8 +61,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Underwaterbet023/FillPit-Website.git
-   cd FillPit
+   https://github.com/Underwaterbet023/FillPit-Website-main.git
 
 
 ## 🤝 Contribution
