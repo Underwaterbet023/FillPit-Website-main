@@ -79,6 +79,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ### Sanskar Kumar
 
 - [![GitHub](https://img.shields.io/badge/GitHub-Underwaterbet023-181717?style=flat&logo=github)](https://github.com/Underwaterbet023)
-- [![Instagram](https://img.shields.io/badge/Instagram-KumarSanskar55-E4405F?style=flat&logo=instagram)](https://www.instagram.com/KumarSanskar55)
+- [![Instagram](https://img.shields.io/badge/Instagram-rajputsanskar55-E4405F?style=flat&logo=instagram)](https://www.instagram.com/rajputsanskar55)
 - [![YouTube](https://img.shields.io/badge/YouTube-SanskarKumar--i1s-FF0000?style=flat&logo=youtube)](https://www.youtube.com/@SanskarKumar-i1s)
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanskar%20Kumar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/sanskar-kumar-65162a2b5/)
