@@ -3,6 +3,14 @@
 
 **FillPit** is a social initiative website that empowers citizens across India to report potholes, helping authorities take swift action. This interactive platform not only spreads awareness about road safety but also engages users in data-backed advocacy through visual analytics and real-world case galleries.
 
+## 👤 Admin page access
+- 🔒 **Email**:  adminfillpit55@gmail.com
+-  **Password**: admin55@55fill
+
+---
+- 🔒 **Email**:  administrator55fillpit
+-  **Password**: aadministrator55pit
+
 ## 🌐 Live Demo
 
 > [ 🚧 Live Demo of my website](https://underwaterbet023.github.io/FillPit-Website-main/)  
